@@ -9,6 +9,5 @@ namespace Xpress.Lms.Models.Entities
         public string Email { get; set; } = default!;
         public string PasswordHash { get; set; } = default!;
         public Roles Role { get; set; }
-        public DateTime? LastLogin { get; set; }
     }
 }
