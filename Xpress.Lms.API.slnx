@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="Xpress.Lms.API/Xpress.Lms.API.csproj" />
+  <Project Path="Xpress.Lms.Core/Xpress.Lms.Core.csproj" />
+  <Project Path="Xpress.Lms.Data/Xpress.Lms.Data.csproj" />
+  <Project Path="Xpress.Lms.Models/Xpress.Lms.Models.csproj" />
+  <Project Path="Xpress.Lms.Repository/Xpress.Lms.Repository.csproj" />
+  <Project Path="Xpress.Lms.Services/Xpress.Lms.Services.csproj" />
+  <Project Path="Xpress.Lms.Shared/Xpress.Lms.Shared.csproj" />
+  <Project Path="Xpress.Lms.Test/Xpress.Lms.Test.csproj" />
+</Solution>
