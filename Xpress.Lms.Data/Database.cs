@@ -13,22 +13,22 @@ namespace Xpress.Lms.Data
              _connectionString = configuration.GetConnectionString("DefaultConnection") ?? throw new ArgumentNullException("an exception occure");
         }
 
-        public async Task<List<T>> Get<T>(string query)
+        public async Task<List<T>> Get<T>(string query, DynamicParameters? parameters = null)
         {
             using var connection = new SqlConnection(_connectionString);
             await connection.OpenAsync();
 
-            var result = await connection.QueryAsync<T>(query);
+            var result = await connection.QueryAsync<T>(query, parameters);
 
             return result.ToList();
         }
 
-        public async Task<T?> GetSingle<T>(string query)
+        public async Task<T?> GetSingle<T>(string query, DynamicParameters? parameters = null)
         {
             using var connection = new SqlConnection(_connectionString);
             await connection.OpenAsync();
 
-            var result = await connection.QueryFirstOrDefaultAsync<T>(query);
+            var result = await connection.QueryFirstOrDefaultAsync<T>(query,parameters);
 
             return result;
         }
