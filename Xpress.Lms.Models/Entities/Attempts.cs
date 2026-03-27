@@ -1,9 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Security.Cryptography.Xml;
-using System.Security.Principal;
-using static System.Formats.Asn1.AsnWriter;
-
-namespace Xpress.Lms.Models.Entities
+﻿namespace Xpress.Lms.Models.Entities
 {
     public class Attempts: BaseEntity
     {
